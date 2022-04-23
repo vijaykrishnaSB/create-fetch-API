@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- blur event in javascript -->
+    <label for="location">Enter Location</label>
+    <input
+      type="text"
+      name="name"
+      id="input_name"
+      placeholder="Add your Location"
+    />
+
+    <script>
+      // blur() event of javascript
+      let input_name = document.getElementById("input_name");
+      input_name.addEventListener("blur", function () {
+        input_name.style.backgroundColor = "lightblue";
+        input_name.style.color = "red";
+      });
+
+      // focus() event
+
+      input_name.addEventListener("focus", function () {
+        input_name.style.backgroundColor = "black";
+        input_name.style.color = "yellow";
+      });
+    </script>
+  </body>
+</html>
